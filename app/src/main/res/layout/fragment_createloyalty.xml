@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Activate in my shop"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/frameLayListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/listShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"
+                    android:dividerHeight="0dp"></ListView>
+
+                <TextView
+                    android:id="@+id/tvShopEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="No Shops Found"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btnAddShop"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:text="Add Shop"
+                android:textColor="@color/text_blue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loyalty Name(Only visible to you)"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_disc_offr"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2">
+
+                <EditText
+                    android:id="@+id/input_loyaltiname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Loyalty Name(Only visible to you)"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="14sp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of pins(12 maximum limit)"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"/>
+-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_original_price"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/input_numberof_pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="2"
+                    android:hint="Number of pins(12 maximum limit)"
+                    android:inputType="number"
+                    android:textColor="@color/darkTextColor"
+                    android:textSize="14sp"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnAddLoyalty"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:text="Save"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+
+</RelativeLayout>
+
