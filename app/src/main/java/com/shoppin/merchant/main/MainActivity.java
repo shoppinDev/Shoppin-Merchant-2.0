@@ -662,7 +662,7 @@ public class MainActivity extends AppCompatActivity
             ft.commit();
         }else if (id == R.id.nav_notifications) {
             if(toolbar != null){
-                toolbar.setTitle("Notification");
+                toolbar.setTitle("Notifications");
             }
             Fragment fragment = new NotificationFragment();
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
@@ -673,7 +673,7 @@ public class MainActivity extends AppCompatActivity
             ft.commit();
         }else if (id == R.id.nav_rewards) {
             if(toolbar != null){
-                toolbar.setTitle("Reward");
+                toolbar.setTitle("Rewards");
             }
             Fragment fragment = new RewardFragment();
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

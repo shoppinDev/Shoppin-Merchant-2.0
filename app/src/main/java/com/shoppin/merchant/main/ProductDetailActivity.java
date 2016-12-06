@@ -324,7 +324,8 @@ public class ProductDetailActivity extends AppCompatActivity {
                     object.getString("categoryname"),//category_name
                     object.getString("subcategoryname"),//subcategory_name
                     object.getString("merchantname"),//merchant_name
-                    object.getString("shopname")
+                    object.getString("shopname"),
+                    object.getString("discount_values")
             );
             //dealData.setCountRedeem(object.getString("count_redeem"));
             dealData.setShopAddress(object.getString("shop_addres"));

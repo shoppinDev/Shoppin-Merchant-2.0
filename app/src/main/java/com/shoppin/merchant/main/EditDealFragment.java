@@ -751,14 +751,19 @@ public class EditDealFragment extends Fragment {
                 //double offrPrice = Double.parseDouble(data.getDiscountValue());
                 //int percentage = (int) ((offrPrice / orgPrice) * 100);
                 //Log.v("Notification", "Discount percentage : " + percentage + " Original Price : " + orgPrice + " Offr price:" + offrPrice);
-                etDiscOffr.setText(data.getDiscountValue());
+//                etDiscOffr.setText(data.getDiscountValue());
+                etDiscOffr.setText(data.getDiscountValues());
                 etOrgPrice.setText(data.getDealAmount());
+                Log.d("Discount Value1",data.getDiscountValues());
             }
         } else if (data.getDiscountType().equals("0")) {
             double orgPrice = Double.parseDouble(data.getDealAmount());
             double offrPrice = Double.parseDouble(data.getDiscountValue());
             int percentage = (int) ((offrPrice / orgPrice) * 100);
-            etDiscOffr.setText(""+percentage);
+//            etDiscOffr.setText(""+percentage);
+//            etDiscOffr.setText(data.getDiscountValue());
+            Log.d("Discount Value",data.getDiscountValues());
+            etDiscOffr.setText(data.getDiscountValues());
             etOrgPrice.setText(data.getDealAmount());
         }
 

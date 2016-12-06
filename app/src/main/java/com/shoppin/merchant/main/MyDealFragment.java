@@ -214,7 +214,8 @@ public class MyDealFragment extends Fragment {
                                 object.getString("category_name"),
                                 object.getString("subcategory_name"),
                                 object.getString("merchant_name"),
-                                object.getString("shop_name")
+                                object.getString("shop_name"),
+                                object.getString("discount_values")
                         );
 
                         data.setQrImagePath(object.getString("qr_image"));

@@ -246,7 +246,8 @@ public class InActiveFragment extends Fragment {
                         object.getString("category_name"),//category_name
                         object.getString("subcategory_name"),//subcategory_name
                         object.getString("merchant_name"),//merchant_name
-                        object.getString("shop_name")
+                        object.getString("shop_name"),
+                        object.getString("discount_values")
                 );
 
                 data.setCountRedeem(object.getString("count_redeem"));

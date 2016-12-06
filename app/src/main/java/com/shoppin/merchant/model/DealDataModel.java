@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class DealDataModel implements Serializable{
 
     String dealId,merchantId,shopId,dealCategory,dealSubCategory,dealTitle,dealDesc,dealStartDate,dealEndDate,dealAmount,allDays;
-    String discountValue,discountType,location,dealUsage,isActive,addedDate,categoryName,subCategoryName,merchantName,shopName;
+    String discountValue,discountType,location,dealUsage,isActive,addedDate,categoryName,subCategoryName,merchantName,shopName,discountValues;
     String qrImagePath;
     String countRedeem;
     String shopAddress,shopLatitude,shopLongitude,shopDistance;
@@ -17,7 +17,7 @@ public class DealDataModel implements Serializable{
     public DealDataModel(String dealId,String merchantId, String shopId, String dealCategory, String dealSubCategory, String dealTitle,
                   String dealDesc, String dealStartDate, String dealEndDate, String dealAmount, String allDays,String discountValue,
                   String discountType, String location,String dealUsage, String isActive,String addedDate,String categoryName,String subCategoryName,
-                  String merchantName,String shopName){
+                  String merchantName,String shopName,String discountValues){
 
         this.dealId = dealId;
         this.merchantId = merchantId;
@@ -40,8 +40,16 @@ public class DealDataModel implements Serializable{
         this.subCategoryName = subCategoryName;
         this.merchantName = merchantName;
         this.shopName = shopName;
+        this.discountValues = discountValues;
     }
 
+    public String getDiscountValues() {
+        return discountValues;
+    }
+
+    public void setDiscountValues(String discountValues) {
+        this.discountValues = discountValues;
+    }
 
     public void setShopName(String shopName) {
         this.shopName = shopName;
